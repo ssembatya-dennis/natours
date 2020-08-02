@@ -26,5 +26,78 @@ body{
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+.logo-box{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+ 
+.logo{
+    height: 35px;
 
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.header-primary-main{
+display: block;
+font-weight: 400px;
+font-size: 40px;
+letter-spacing: 23px;
+animation-name: moveInleft;
+animation-duration: 1s;
+}
+
+.header-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700px;
+    letter-spacing: 6.9px;
+    animation-name: moveInright;
+    animation-duration: 1s;
+}
+
+@keyframes moveInleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInright{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
