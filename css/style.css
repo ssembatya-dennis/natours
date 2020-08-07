@@ -5,19 +5,24 @@ light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 */
-*{
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: "lato" sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /*font-size: 100%;*/
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 .header{
@@ -30,12 +35,12 @@ body{
 }
 .logo-box{
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
  
 .logo{
-    height: 35px;
+    height: 3.5rem;
 
 }
 
@@ -51,23 +56,23 @@ body{
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .header-primary-main{
 display: block;
-font-weight: 400px;
-font-size: 40px;
-letter-spacing: 23px;
+font-weight: 40rem;
+font-size: 4rem;
+letter-spacing: 2.3rem;
 animation-name: moveInleft;
 animation-duration: 1s;
 }
 
 .header-primary-sub{
     display: block;
-    font-size: 20px;
-    font-weight: 700px;
-    letter-spacing: 6.9px;
+    font-size: 2rem;
+    font-weight: 70rem;
+    letter-spacing: 0.69rem;
     animation-name: moveInright;
     animation-duration: 1s;
 }
@@ -75,39 +80,39 @@ animation-duration: 1s;
 @keyframes moveInleft{
     0%{
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80%{
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100%{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 
 @keyframes moveInright{
     0%{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80%{
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100%{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 }
 
 @keyframes moveInbottom{
     0%{
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(2rem);
     }
 
     100%{
@@ -119,15 +124,16 @@ animation-duration: 1s;
 .btn:visited{
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
 }
 .btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0,10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-.3rem);
+    box-shadow: 0,1rem 2rem rgba(0,0,0,0.2);
 }
 
 .btn-white{
@@ -137,7 +143,7 @@ animation-duration: 1s;
  
 .btn:active{
     transform: translateY(-1px);
-    box-shadow: 0,5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0,.5rem 1rem rgba(0,0,0,0.2);
 }
 
 .btn::after{
@@ -151,8 +157,6 @@ animation-duration: 1s;
     left: 0;
     z-index: -1;
     transition: all .2s;
-
-
 }
 
 .btn-white::after{
