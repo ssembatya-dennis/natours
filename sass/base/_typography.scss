@@ -1,0 +1,32 @@
+.header-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main{
+        display: block;
+        font-weight: 40rem;
+        font-size: 4rem;
+        letter-spacing: 2.3rem;
+        animation-name: moveInleft;
+        animation-duration: 1s;
+    }
+        
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 70rem;
+        letter-spacing: 0.64rem;
+        animation-name: moveInright;
+        animation-duration: 1s;
+    }
+}
+
+body{
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+}
