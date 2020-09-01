@@ -57,6 +57,21 @@ body {
     animation-name: moveInright;
     animation-duration: 1s; }
 
+.header-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  translate: all 1s; }
+  .header-secondary:hover {
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
 body {
   font-family: "lato", sans-serif;
   font-weight: 400;
@@ -64,14 +79,18 @@ body {
   color: #777;
   padding: 3rem; }
 
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
 .row {
   max-width: 80rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^=col-] {
-    background-color: orangered;
     float: left; }
     .row [class^=col-]:not(:last-child) {
       margin-right: 6rem; }
@@ -157,3 +176,8 @@ body {
   animation-delay: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20rem; }
