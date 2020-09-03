@@ -79,6 +79,16 @@ body {
   color: #777;
   padding: 3rem; }
 
+.header-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragragh {
+  font-size: 1.6rem; }
+  .paragragh:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 

@@ -52,3 +52,17 @@ body{
     color: $color-grey-dark;
     padding: 3rem;
 }
+
+.header-tertiary{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragragh{
+    font-size: 1.6rem;
+    
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
