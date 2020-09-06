@@ -44,18 +44,20 @@ body {
   margin-bottom: 6rem; }
   .header-primary--main {
     display: block;
-    font-weight: 40rem;
-    font-size: 4rem;
-    letter-spacing: 2.3rem;
+    font-weight: 400;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
     animation-name: moveInleft;
-    animation-duration: 1s; }
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
   .header-primary--sub {
     display: block;
     font-size: 2rem;
-    font-weight: 70rem;
-    letter-spacing: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
     animation-name: moveInright;
-    animation-duration: 1s; }
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 .header-secondary {
   font-size: 3.5rem;
@@ -67,9 +69,9 @@ body {
   background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
-  translate: all 1s; }
+  transition: all 1s; }
   .header-secondary:hover {
-    transform: skewY(2deg) skewX(15deg);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 body {
@@ -79,20 +81,26 @@ body {
   color: #777;
   padding: 3rem; }
 
+.para {
+  font-size: 1.6rem; }
+  .para:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .header-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
 
-.paragragh {
-  font-size: 1.6rem; }
-  .paragragh:not(:last-child) {
-    margin-bottom: 3rem; }
-
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
 
 .row {
@@ -123,7 +131,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -186,6 +194,25 @@ body {
   animation-delay: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .section-about {
   background-color: #f7f7f7;
